@@ -197,7 +197,6 @@ button
 
 	&__btn
 		opacity: 1
-		@include transition(.2s)
 		&:hover
 			opacity: .7
 		i
@@ -211,16 +210,12 @@ button
 	&__valid
 		display: block
 		width: 90%
-		@include transition(.2s)
-		&.active
-			display: none
 
 	&__editing
 		display: none
 		width: 90%
-		@include transition(.2s)
-		&.active
-			display: block
+		padding-left: 4px
+		padding-right: 4px
 
 
 

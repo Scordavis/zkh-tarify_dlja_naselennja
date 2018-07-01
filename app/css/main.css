@@ -4909,10 +4909,7 @@ button {
     border-right: none; }
 
 .rate__btn {
-  opacity: 1;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
+  opacity: 1; }
   .rate__btn:hover {
     opacity: .7; }
   .rate__btn i {
@@ -4923,21 +4920,13 @@ button {
 
 .rate__valid {
   display: block;
-  width: 90%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
-  .rate__valid.active {
-    display: none; }
+  width: 90%; }
 
 .rate__editing {
   display: none;
   width: 90%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
-  .rate__editing.active {
-    display: block; }
+  padding-left: 4px;
+  padding-right: 4px; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
