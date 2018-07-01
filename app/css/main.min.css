@@ -4848,102 +4848,6 @@ button {
     width: 100%;
     max-width: 80px;
     height: auto; }
-  .site-header__settings {
-    position: relative;
-    display: block;
-    width: auto;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .site-header__settings:hover {
-      -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-              transform: rotate(90deg); }
-
-.nav-section {
-  height: 74px;
-  background-color: #cd1000; }
-  .nav-section__button {
-    height: 50px; }
-
-.characteristics-cards {
-  background-color: #f2f2f2; }
-  .characteristics-cards__item {
-    display: block;
-    width: 100%;
-    background-color: white;
-    -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1); }
-  .characteristics-cards__number {
-    color: rgba(0, 81, 163, 0.2);
-    font-size: 72px;
-    font-weight: bold;
-    line-height: 1; }
-  .characteristics-cards__title {
-    color: #606060;
-    font-size: 17px;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .characteristics-cards__link--grey {
-    display: block;
-    color: #bababa; }
-    .characteristics-cards__link--grey:hover {
-      color: #999999; }
-  .characteristics-cards__link--blue {
-    color: #0051a3;
-    font-weight: 700; }
-    .characteristics-cards__link--blue:hover {
-      color: #003870; }
-
-.houses {
-  border-bottom: 1px solid #f0f0f0; }
-  .houses:last-of-type {
-    border: none; }
-  .houses__counter {
-    position: relative;
-    display: inline-block;
-    color: #0051a3;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: normal; }
-    .houses__counter:after {
-      position: relative;
-      content: '.'; }
-  .houses__title {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: normal; }
-    .houses__title:before {
-      display: inline-block;
-      margin-right: 4px;
-      counter-increment: section;
-      content: counter(section) ".";
-      color: #0051a3;
-      font-size: 20px;
-      font-weight: bold; }
-  .houses__item {
-    margin-bottom: 14px; }
-  .houses__wrapper {
-    height: 98px;
-    padding: 10px 22px;
-    border: 2px solid #f2f2f2; }
-  .houses__card {
-    height: 100%;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-  .houses__img {
-    max-width: 38px;
-    height: auto; }
-  .houses__numbers {
-    margin-bottom: 0;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: .7; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
@@ -4956,10 +4860,6 @@ button {
     height: 120px;
     color: white; }
     .site-header__title {
-      font-size: 18px; }
-  .houses__img {
-    max-width: 30px; }
-  .characteristics-cards__title {
-    font-size: 14px; } }
+      font-size: 18px; } }
 
 /*==========  Mobile First  ==========*/

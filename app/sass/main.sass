@@ -127,128 +127,100 @@ button
 		height: auto
 
 	&__button
-	&__settings
-		position: relative
-		display: block
-		width: auto
-		transform: rotate(0deg)
-		@include transition(.3s)
-		// z-index: 2
-		// &:before
-		// 	position: absolute
-		// 	top: -12px
-		// 	right: 0
-		// 	bottom: 0
-		// 	left: 19px
-		// 	content: ''
-		// 	display: block
-		// 	width: 60px
-		// 	height: 60px
-		// 	background-color: white
-		// 	opacity: .5
-		// 	border-radius: 100%
-		// 	transform: scale(0)
-		// 	z-index: -1
-		// 	@include transition(.1s)
-		&:hover
-			transform: rotate(90deg)
-		// 	&:before
-		// 		transform: scale(1.5)
-		// 		opacity: 0
 
-// .nav-section
-.nav-section
-	height: 74px
-	background-color: $danger
-	&__button
-		height: 50px
 
-// .characteristics-cards
-.characteristics-cards
-	background-color: darken(white, 5%)
-	&__item
-		display: block
-		width: 100%
-		background-color: white
-		box-shadow: 0px 8px 10px 0px fade-out(black, .9)
-	&__number
-		color: fade-out($accent, .8)
-		font-size: 72px
-		font-weight: bold
-		line-height: 1
+// Serega! Budesh vyazat - dobavljay v osnovnyu tablicu stiley vse chto nizhe. Vse chto vyshe - dubli
 
-	&__title
-		color: $text
-		font-size: 17px
-		font-weight: bold
-		text-transform: uppercase
-
-	&__link
-		&--grey
-			display: block
-			color: darken(white, 27%)
-			&:hover
-				color: darken(white, 40%)
-		&--blue
-			color: $accent
-			font-weight: 700
-			&:hover
-				color: darken($accent, 10%)
-
-// .houses
-.houses
-	border-bottom: 1px solid darken(white, 6%)
-	&:last-of-type
-			border: none
-
-	&__counter
-		position: relative
-		display: inline-block
+// .tariff
+.tariff
+	&__heading
+		margin-bottom: 33px
 		color: $accent
 		font-size: 20px
 		font-weight: bold
-		font-style: normal
-		&:after
-			position: relative
-			content: '.'
+		text-transform: uppercase
 
-	&__title
+// .rate
+.rate
+	&__heading
+		position: relative
 		display: inline-block
-		font-size: 18px
-		font-weight: normal
-		&:before
-			display: inline-block
-			margin-right: 4px
-			counter-increment: section
-			content: counter(section) "."
-			color: $accent
-			font-size: 20px
-			font-weight: bold
-
-	&__row
-	&__item
-		margin-bottom: 14px
-
-	&__wrapper
-		height: 98px
-		padding: 10px 22px
-		border: 2px solid darken(white, 5%)
-
-	&__card
-		height: 100%
-		align-items: flex-end
-
-	&__img
-		max-width: 38px
-		height: auto
-
-	&__numbers
-		margin-bottom: 0
+		margin-bottom: 20px
 		font-size: 20px
 		font-weight: bold
-		line-height: .7
+		text-transform: uppercase
+		color: $text
+		&:before
+			position: relative
+			content: ''
+			display: inline-block
+			top: -6px
+			width: 80px
+			height: 2px
+			margin-right: 20px
+			background-color: $danger
 
+	&__table
+		width: 100%
 
+	&__table-row
+
+	&__th
+		position: relative
+		min-width: 64px
+		padding: 18px 10px
+		font-weight: normal
+		text-align: center
+		border: 1px solid darken(white, 17%)
+		z-index: 1
+		@include transition(.2s)
+		&:first-child
+			padding-left: 20px
+			text-align: left
+			line-height: 1.4
+
+	&__table-header
+		height: 48px
+		padding: 0
+		background-color: $light-blue
+		color: white
+		text-align: center
+		border-bottom: 1px solid black
+		border-right: 1px solid white
+		&:first-child
+			width: 40%
+			max-width: 40%
+			text-align: center
+
+		&:last-child
+			border-right: none
+
+	&__btn
+		opacity: 1
+		@include transition(.2s)
+		&:hover
+			opacity: .7
+		i
+			color: $accent
+			font-weight: bold
+
+		&--red
+			i
+				color: $danger
+
+	&__valid
+		display: block
+		width: 90%
+		@include transition(.2s)
+		&.active
+			display: none
+
+	&__editing
+		display: none
+		width: 90%
+		@include transition(.2s)
+		&.active
+			display: block
 
 
 
