@@ -4950,6 +4950,8 @@ button {
     height: 120px;
     color: white; }
     .site-header__title {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .rate__search {
+    max-width: 45%; } }
 
 /*==========  Mobile First  ==========*/
