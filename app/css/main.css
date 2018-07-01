@@ -4751,6 +4751,7 @@ body {
   color: #606060;
   counter-reset: section; }
   body input, body textarea {
+    padding: 0 4px;
     border: #666 1px solid;
     outline: none; }
     body input:focus:required:invalid, body textarea:focus:required:invalid {
@@ -4861,7 +4862,7 @@ button {
   .rate__heading {
     position: relative;
     display: inline-block;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -4875,6 +4876,12 @@ button {
       height: 2px;
       margin-right: 20px;
       background-color: #cd1000; }
+  .rate__search {
+    position: relative;
+    display: inline-block;
+    max-width: 53%; }
+  .rate__input {
+    max-width: 100%; }
   .rate__table {
     width: 100%; }
   .rate__th {

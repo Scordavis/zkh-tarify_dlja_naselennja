@@ -19,6 +19,7 @@ body
 	color: $text
 	counter-reset: section
 	input, textarea
+		padding: 0 4px
 		border: #666 1px solid
 		outline: none
 		&:focus:required:invalid
@@ -147,7 +148,7 @@ button
 	&__heading
 		position: relative
 		display: inline-block
-		margin-bottom: 20px
+		margin: 0 20px 20px 0
 		font-size: 20px
 		font-weight: bold
 		text-transform: uppercase
@@ -161,6 +162,14 @@ button
 			height: 2px
 			margin-right: 20px
 			background-color: $danger
+
+	&__search
+		position: relative
+		display: inline-block
+		max-width: 53%
+
+	&__input
+		max-width: 100%
 
 	&__table
 		width: 100%
