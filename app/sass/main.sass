@@ -1,0 +1,267 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 992px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	counter-reset: section
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-image: url('../img/icon-plus.png')
+		background-repeat: no-repeat
+		background-position: 96% center
+
+
+
+
+b, strong
+	font-weight: bold
+
+
+// custom classes
+
+// reset-links
+.reset-link
+	color: inherit
+	&:hover,&:active,&:focus
+		color: inherit
+
+// button outline reset
+button
+	outline: none
+	background-color: transparent
+	border: 0
+	cursor: pointer
+	&:hover
+		outline: none
+	&:focus
+		outline: none
+	&:active
+		outline: none
+	&:visited
+		outline: none
+		cursor: pointer
+
+// @include transition(.2s)
+
+.button
+	&--red
+		background-color: $danger
+		color: white
+		border: 1px solid white
+		cursor: pointer
+		@include transition(.2s)
+		&:hover
+			background-color: white
+			border-color: $danger
+			color: $danger
+
+	&--blue
+		background-color: $accent
+		color: white
+		border: 1px solid white
+		@include transition(.2s)
+		cursor: pointer
+		&:hover
+			background-color: white
+			border-color: $accent
+			color: $accent
+		&.active
+			background-color: white
+			border-color: $accent
+			color: $accent
+
+	&--normal
+		width: auto
+
+	&--rounded
+		border-radius: 2px
+
+	&--100
+		width: 100%
+
+// .site-header
+.site-header
+	background-color: $accent
+	min-height: 120px
+	height: 120px
+	color: white
+	&__title-block
+	&__title
+		font-size: 20px
+		text-transform: uppercase
+	&__city
+		font-size: 14px
+		text-transform: uppercase
+	&__region
+		&:before
+			display: inline-block
+			content: ' / '
+			margin: 0 8px
+	&__logo-wrapper
+	&__logo
+		width: 100%
+		max-width: 80px
+		height: auto
+
+	&__button
+	&__settings
+		position: relative
+		display: block
+		width: auto
+		transform: rotate(0deg)
+		@include transition(.3s)
+		// z-index: 2
+		// &:before
+		// 	position: absolute
+		// 	top: -12px
+		// 	right: 0
+		// 	bottom: 0
+		// 	left: 19px
+		// 	content: ''
+		// 	display: block
+		// 	width: 60px
+		// 	height: 60px
+		// 	background-color: white
+		// 	opacity: .5
+		// 	border-radius: 100%
+		// 	transform: scale(0)
+		// 	z-index: -1
+		// 	@include transition(.1s)
+		&:hover
+			transform: rotate(90deg)
+		// 	&:before
+		// 		transform: scale(1.5)
+		// 		opacity: 0
+
+// .nav-section
+.nav-section
+	height: 74px
+	background-color: $danger
+	&__button
+		height: 50px
+
+// .characteristics-cards
+.characteristics-cards
+	background-color: darken(white, 5%)
+	&__item
+		display: block
+		width: 100%
+		background-color: white
+		box-shadow: 0px 8px 10px 0px fade-out(black, .9)
+	&__number
+		color: fade-out($accent, .8)
+		font-size: 72px
+		font-weight: bold
+		line-height: 1
+
+	&__title
+		color: $text
+		font-size: 17px
+		font-weight: bold
+		text-transform: uppercase
+
+	&__link
+		&--grey
+			display: block
+			color: darken(white, 27%)
+			&:hover
+				color: darken(white, 40%)
+		&--blue
+			color: $accent
+			font-weight: 700
+			&:hover
+				color: darken($accent, 10%)
+
+// .houses
+.houses
+	border-bottom: 1px solid darken(white, 6%)
+	&:last-of-type
+			border: none
+
+	&__counter
+		position: relative
+		display: inline-block
+		color: $accent
+		font-size: 20px
+		font-weight: bold
+		font-style: normal
+		&:after
+			position: relative
+			content: '.'
+
+	&__title
+		display: inline-block
+		font-size: 18px
+		font-weight: normal
+		&:before
+			display: inline-block
+			margin-right: 4px
+			counter-increment: section
+			content: counter(section) "."
+			color: $accent
+			font-size: 20px
+			font-weight: bold
+
+	&__row
+	&__item
+		margin-bottom: 14px
+
+	&__wrapper
+		height: 98px
+		padding: 10px 22px
+		border: 2px solid darken(white, 5%)
+
+	&__card
+		height: 100%
+		align-items: flex-end
+
+	&__img
+		max-width: 38px
+		height: auto
+
+	&__numbers
+		margin-bottom: 0
+		font-size: 20px
+		font-weight: bold
+		line-height: .7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end

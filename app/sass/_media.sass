@@ -1,0 +1,58 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	body
+		font-size: 14px
+		line-height: 1.65
+
+	// .site-header
+	.site-header
+		background-color: $accent
+		min-height: 120px
+		height: 120px
+		color: white
+		&__title-block
+		&__title
+			font-size: 18px
+
+	// .houses
+	.houses
+		&__img
+			max-width: 30px
+
+	// .characteristics-cards
+	.characteristics-cards
+		&__title
+			font-size: 14px
+
+// ≥992px
++media-breakpoint-down(md)
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
