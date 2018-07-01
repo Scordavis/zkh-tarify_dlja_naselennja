@@ -36,7 +36,7 @@
 			<h1 class="tariff__heading">тарифи для населення</h1>
 			<!-- table start -->
 			<div class="rate">
-				<h2  class="rate__heading">Централізоване опалення</h2>
+				<h2  class="rate__heading">Теплопостачання</h2>
 				<table class="rate__table">
 					<!-- table-header -->
 					<tr class="test-wrap">
@@ -47,11 +47,22 @@
 						<th class="rate__th rate__table-header" data-th-number="5">Рішення</th>
 						<th class="rate__th rate__table-header" data-th-number="6">Дата введення</th>
 						<th class="rate__th rate__table-header" data-th-number="7">Дата закінчення</th>
-						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button></th>
+						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th>
 					</tr>
 					<!-- table-row -->
 					<tr class="rate__table-row" data-row-number="1">
-						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span> <input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
 						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
 						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
 						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
@@ -64,7 +75,7 @@
 			</div>
 			<!-- table start -->
 			<div class="rate">
-				<h2  class="rate__heading">Централізоване опалення</h2>
+				<h2  class="rate__heading">Водопостачання</h2>
 				<table class="rate__table">
 					<!-- table-header -->
 					<tr class="test-wrap">
@@ -74,22 +85,170 @@
 						<th class="rate__th rate__table-header" data-th-number="4">Рішення</th>
 						<th class="rate__th rate__table-header" data-th-number="5">Рішення</th>
 						<th class="rate__th rate__table-header" data-th-number="6">Дата введення</th>
-						<th class="rate__th rate__table-header" data-th-number="7"><p class="test">23</p> Дата закінчення</th>
-						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__btn"><i class="fa fa-pencil-square-o"></i></button></th>
+						<th class="rate__th rate__table-header" data-th-number="7">Дата закінчення</th>
+						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th>
 					</tr>
 					<!-- table-row -->
 					<tr class="rate__table-row" data-row-number="1">
-						<th class="rate__th rate__valid rate__valid" data-col-number="1">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="2">м<sup>2</sup> <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="3">1255 <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="4">Рішення <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="5">Рішення <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="6">Дата введення <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="7">Дата закінчення <input type="text" class="rate__editing"></th>
-						<th class="rate__th rate__valid" data-col-number="8"><button class="rate__btn rate__btn--red rate__editing"><i class="fa fa-close"></i></button></th>
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
 					</tr>
 				</table>
 			</div>
+			<!-- table start -->
+			<div class="rate">
+				<h2  class="rate__heading">Водовідведення</h2>
+				<table class="rate__table">
+					<!-- table-header -->
+					<tr class="test-wrap">
+						<th class="rate__th rate__table-header" data-th-number="1">Найменування</th>
+						<th class="rate__th rate__table-header" data-th-number="2">Вимір</th>
+						<th class="rate__th rate__table-header" data-th-number="3">Розмір</th>
+						<th class="rate__th rate__table-header" data-th-number="4">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="5">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="6">Дата введення</th>
+						<th class="rate__th rate__table-header" data-th-number="7">Дата закінчення</th>
+						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+				</table>
+			</div>
+			<!-- table start -->
+			<div class="rate">
+				<h2  class="rate__heading">Утримання та управління житла</h2>
+				<table class="rate__table">
+					<!-- table-header -->
+					<tr class="test-wrap">
+						<th class="rate__th rate__table-header" data-th-number="1">Найменування</th>
+						<th class="rate__th rate__table-header" data-th-number="2">Вимір</th>
+						<th class="rate__th rate__table-header" data-th-number="3">Розмір</th>
+						<th class="rate__th rate__table-header" data-th-number="4">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="5">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="6">Дата введення</th>
+						<th class="rate__th rate__table-header" data-th-number="7">Дата закінчення</th>
+						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+				</table>
+			</div>
+			<!-- table start -->
+			<div class="rate">
+				<h2  class="rate__heading">Вивезення тпв</h2>
+				<table class="rate__table">
+					<!-- table-header -->
+					<tr class="test-wrap">
+						<th class="rate__th rate__table-header" data-th-number="1">Найменування</th>
+						<th class="rate__th rate__table-header" data-th-number="2">Вимір</th>
+						<th class="rate__th rate__table-header" data-th-number="3">Розмір</th>
+						<th class="rate__th rate__table-header" data-th-number="4">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="5">Рішення</th>
+						<th class="rate__th rate__table-header" data-th-number="6">Дата введення</th>
+						<th class="rate__th rate__table-header" data-th-number="7">Дата закінчення</th>
+						<th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="1"><span class="rate__valid">Централізоване опалення для абонентів без будинкових та квартирних приладів обліку теплової енергії для потреб населення</span><span class="rate__editing rate__editing--blue">Заповніть цей рядок для створення нового запису</span></th>
+						<th class="rate__th" data-col-number="2"><span class="rate__valid">м<sup>2</sup></span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="3"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="4"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="5"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="6"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="7"><span class="rate__valid">1255</span><input type="text" class="rate__editing"></th>
+						<th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th>
+					</tr>
+				</table>
+			</div>
+			<!-- table start -->
+			<div class="rate">
+				<h2  class="rate__heading">Вивезення рпв</h2>
+				<table class="rate__table">
+					<!-- table-header -->
+					<tr class="test-wrap">
+						<th class="rate__th rate__table-header" data-th-number="1">Вулиця</th>
+						<th class="rate__th rate__table-header" data-th-number="2">Будинок</th>
+						<!-- <th class="rate__th rate__table-header" data-th-number="8"><button class="rate__valid rate__btn rate__btn--open"><i class="fa fa-pencil-square-o"></i></button><button class="rate__btn rate__btn--green rate__editing rate__btn--done"><i class="fa fa-check"></i></button></th> -->
+					</tr>
+					<!-- table-row -->
+					<tr class="rate__table-row" data-row-number="1">
+						<th class="rate__th" data-col-number="3"><input type="text" class="rate__valid"></th>
+						<th class="rate__th" data-col-number="3"><input type="text" class="rate__valid"></th>
+						<!-- <th class="rate__th" data-col-number="3"><input type="text" class="rate__valid"></th> -->
+						<!-- <th class="rate__th" data-col-number="8"><button class="rate__btn rate__btn--red rate__btn--close rate__editing"><i class="fa fa-close"></i></button></th> -->
+					</tr>
+				</table>
+			</div>
+			<!-- end section.tariff -->
 		</section>
 	</div>
 
